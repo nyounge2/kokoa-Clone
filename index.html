@@ -6,7 +6,7 @@
     <title>Welcome to KaKao Talk</title>
   </head>
   <body>
-    <div id="status-bar">
+    <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
         <i class="fa-solid fa-wifi"></i>
@@ -21,6 +21,20 @@
         <i class="fas fa-bolt"></i>
       </div>
     </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to KaKao Clone</h1>
+      <p class="welcome-header__text">
+        If you have a KaKao Account, log in with your email or phone number.
+      </p>
+    </header>
+    <form id="login-form">
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <button>Sign Up</button>
+      <a href="#">Find KaKao Account or Password</a>
+    </form>
     <script
       src="https://kit.fontawesome.com/3c9f108f2f.js"
       crossorigin="anonymous"
