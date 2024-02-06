@@ -56,3 +56,18 @@
     margin-bottom: 10px;
     display: block;
 }
+
+
+.user-component__text-sub{
+    display: flex;
+}
+
+.user-component__text-sub span{
+    margin-left: 10px;
+    border: 1px solid red;
+    border-radius: 50%;
+    font-size: 14px;   
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}

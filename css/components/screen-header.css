@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: var(--horizontal-space);
-    margin-bottom: 15px;
+    margin-bottom: 15px;    
 }
 .screen-header__title{
     font-size: 32px;
@@ -17,4 +17,29 @@
 .screen-header__icons span:last-child{
     position: left;
     position: relative;
+}
+
+#chats .screen-header,
+#chats .status-bar{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+#chats .status-bar{
+    z-index: 2;
+}
+
+#chats{
+    height: 10000vh;
+}
+
+#chats .screen-header{
+    padding-top: 60px;
+}
+
+#chats .user-component:first-child{
+    margin-top: 120px;
 }
