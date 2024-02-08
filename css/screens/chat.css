@@ -1,3 +1,8 @@
+/* 스크롤바 숨기기 */
+::-webkit-scrollbar {
+    display: none;
+}
+
 #chat-screen{
     background-color: #abc1d1;
     height: 11000vh;
@@ -98,7 +103,7 @@
     background-color: white;
     display: flex;
     justify-content: space-between;
-    padding: 5px 25px;
+    padding: 5px 40px;
     box-sizing: border-box;
     align-items: center;
 }
@@ -127,20 +132,22 @@
 .reply__column:last-child > i,
 .reply__column button{
     position: absolute;
-    right: -3px;
-    top: 2px;
+    right: -20px;
+    top: 3px;
 }
 
+
 .reply__column:last-child > i{
-    right: 40px;
-    top: 10px;
+    font-size: 25px;
+    right: 25px;
+    top: 8px;
 }
 
 .reply__column button{
     background-color: var(--yellow);
     border: none;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
 }
 
