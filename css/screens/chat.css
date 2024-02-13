@@ -69,10 +69,39 @@
     margin-bottom: 25px;
 }
 
+@keyframes SlideMessageRight{
+    from{
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes SlideMessageLeft{
+    from{
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+
 .message-row{
     width: 100%;
     display: flex;
     margin-bottom: 25px;
+    transform: translateX(-200px);   
+    animation: SlideMessageLeft 0.5s ease-in-out forwards;
+}
+
+.message-row:last-child{
+    opacity: 0;
+    transform: translateX(200px);
+    animation: SlideMessageRight 0.5s ease-in-out forwards;    
+    animation-delay: 0.5s;
 }
 
 .message-row img{
@@ -194,6 +223,7 @@
 .reply button{
     transition: opacity 0.3s ease-in-out;
 }
+
 .reply:focus-within .reply__column:first-child,
 .reply:focus-within .fa-face-smile-wink,
 .reply:focus-within button{
