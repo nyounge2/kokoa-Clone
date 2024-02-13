@@ -49,5 +49,7 @@
     justify-content: center;
     align-items: center;
     font-size: 132px;
-    animation: highSplashScreen 1s ease-in-out forwards;
+    /* forwards is last keyframes */
+    animation: highSplashScreen 0.3s ease-in-out forwards;
+    animation-delay: 2s;
 }
